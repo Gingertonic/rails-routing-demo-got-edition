@@ -1,0 +1,85 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+body {
+  margin-top: 10vh;
+  background-image: url('https://cdn.shopify.com/s/files/1/0969/9128/products/Fan_Art_Poster_-_Game_Of_Thrones_-_Map_Of_The_Seven_Kingdoms_-_TV_Show_Collection_d0f3d04f-33d5-422d-9ddb-541d44f3d761.jpg?v=1489558016');
+  margin-bottom: 10vh;
+}
+
+* {
+  /* font-family: monospace; */
+  font-family: 'Cinzel', serif;
+  text-align: center;
+}
+
+#transparency {
+  background-color: rgba(256, 256, 256, 0.7);
+  padding: 2vh;
+  margin: auto 0;
+}
+
+ul {
+  margin-bottom: 3vh;
+  list-style: none;
+  padding: 0;
+}
+
+#nav {
+  color: darkgrey;
+  margin: 8vh;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+  color: orange;
+}
+
+.houses, .ch-index {
+  margin: 0 auto;
+  display: flex;
+  max-width: 80vw;
+  justify-content: space-between;
+}
+
+.house-icon {
+  width: 30%;
+}
+
+.house-banner {
+  width: 90%;
+}
+
+.mini-banner {
+  height: 20vh;
+}
+
+.house-characters {
+  border-left: 1px dashed darkgrey;
+  border-right: 1px dashed darkgrey;
+  padding: 0.5vw;
+  width: 25vw;
+}
+
+li {
+  font-size: 0.75em;
+}

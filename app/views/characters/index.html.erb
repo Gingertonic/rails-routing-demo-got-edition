@@ -1,0 +1,19 @@
+<h1>All the Characters!</h1>
+
+<ul>
+  <!-- <li>URL: songs_url</li>
+  <li>PATH: songs_path</li> -->
+</ul>
+
+<div class='ch-index'>
+  <% @houses.each do |h| %>
+    <div class="house-characters">
+      <ul>
+      <% h.characters.each do |c| %>
+        <!-- Add link to character show page here -->
+        <li><%=link_to "#{c.name} #{h.name}", character_path(c)%></li><br />
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+</div>

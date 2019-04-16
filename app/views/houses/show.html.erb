@@ -1,0 +1,10 @@
+<h1><%= @house.name %></h1>
+<%= image_tag(@house.banner, class: "mini-banner") %>
+<ul>
+  <% @characters.each do |c| %>
+    <!-- Add link to character here -->
+    <li class="ch-link"><%= link_to c.name, character_path(c.id) %></li>
+  <% end %>
+</ul>
+
+

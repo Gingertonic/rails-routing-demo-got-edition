@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rails Routing & Helpers GOT Edition</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAbFBMVEX///9lbHXo5+dbYWlWXGNYXmZTWWBOU1q7vcFbY2x6gIe2ub3r6upLUFeusLRgZ3FFSlE7QUne3t7Y2Nn4+PhqcXrMzM1iZ2zAwsSOkJSfoaOqq61QV2GDh42kp6suMzqWmp9xdHgBFCEeJy+cc7S0AAAEzklEQVRoge3aiY6bOhQG4IDDZgzeglkSEmjf/x2vWWZCwIANRJWu+FVpNKOq3xz7eCH0cjlz5syZM//bZP7BCZm2XQcH5xFq29A6OMFpn/Zpn/Zpn/Zpn/Y/tCH+d3YVJ7jn8dqvcZzdS5yFeeI0V8G8qJ1gyT/MTioYBBgHiY0Q4iITzVfmF+1Pv103ZCwL78+nQLbduLbdfWX+s0yU+iF2+y/jWqA29ijyJzxX4UfYeZXIMa/LcKy+eabq/yPsJLQ552xa8QAXsE7GnX+EjR+QzbtxHeWobQDh59aw8/bZSQmTBOY+n6/YRjz0B40Xx79zv7Pu5M66blrC0cc3KPMOGvPoOt9h6t+E1QTsteWixTgpq8zQzonngX02zoXcvPjKeCvKBpHnecG+urEVarjjv8FKWXaPb7Rxs3PDbN3OGRqODerpdti32WVRxEJjuFH2yu+p3FIRZ+0Pil52XYlvs5OC680zK8ualvVVpAUSAoX0h5YBG8ccXDXGuylc9nUZkcglsKo5S6M37bpbPuuRkw2FjtyVjkqakiiiuf9Ju1FsbOdhLExWFvIzLgtPc/pJu8TcxrHikF7EEROiZhn5pLfULW8Jcd+2+rz8U5BPepNtYZrqzTdi/Od0RfGoave6yZaVQy25SD1Qdd9wEo3ojbbllBrbKUtp1PR3e3nMJvRWG1eqW+EotVxZUUTusjnkETKht9rWM7sX9+Wy46bqKPIgrVD2iCb0ZhvT199qqXDUl91UHj5HLd7SV2+jbWHyKhZsxpjXyZ5HynGHt3E221ZA72hyPP9Wneec9LQ3WVy7bQvI40Sob6iIU3InK/QeGxb0759YWbncw6IPejLXkt5jJxGlL19hM8jL1QHfZ1uWR18hmlxf0JPm5eqA77UtL2KM89Gkc0BcSNbpnTauckDIS3w8eWTS9TRoZ+c7KkApJWR4oDIU68y1DPAybbtUPb9jQkg0eApFMF5fXB0NPKFtV+oPLghJ348A8ibqFpo08Li2HQcqW+I19NI07Hi5iaeuHg2ArW1zR2lLXE457Wzuas61jFPftG1bTUs86myUP7nuXMtcc236clM2W99wtEDIp26ms647GhgsscslVE94g0ey4ZDcUGp9GgD919+XC5v/gDLwiLA9/bluphsa0DMr/KfhSpua0ODhG9lidtCbhvMN5lom0O/yNksfqQapEe3qHyTrhcs5N6CBY0gvzrjsdgP6oX+O/GR2f+miX3VpTMs1vvgiArtzd7MRbelv5e/c1KfZEF+ngWM+4k1QsjjqWGPAwaPYRMvdbeY4m+DzVZvtaMPwpYX2xufpxHBXGSbTwedpC22n15q9xRdok+NLkZnr0y9+XaD1L2kz8Zdxa36utyzsURZ39h5XLK4j6Pmb408cFQ13dPgwtvpF4xuf0gaXw5Ug5YvGET6YamB6Yi/l9lzFhw2u/wSkFbH4ftsantdw146iyq1c7Pffoo1vSFrJFluuL7rcuZfNBVVLpbdNFh60tBQRyYIuiz5kP5nLrbBmH9WSbVcUg3B1z2FcHN7eimTWVP/ycL9ze44We3D0brIUOx/8hwac3L/X3aoI2A88tqovLen53MJ2qwng7tvJJr1yAvz1dTUX2+yh/syZM2fOfC//AejlezfyscIiAAAAAElFTkSuQmCC') %>
+  </head>
+
+  <body>
+    <div id='transparency'>
+      <div id="nav">
+        <%= link_to "Houses", '/houses' %>       
+        |       <a href="/">Home</a>        |
+        <%= link_to "Characters", '/characters' %>       |
+      </div>
+      <%= yield %>
+    </div>
+  </body>
+</html>

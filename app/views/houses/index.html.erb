@@ -1,0 +1,16 @@
+<h1>The Great Houses!</h1>
+
+<ul>
+  <!-- <li>URL: houses_url</li>
+  <li>PATH: houses_path</li> -->
+</ul>
+
+<div class="houses">
+<% @houses.each do |house| %>
+  <div class="house-icon">
+    <%= image_tag(house.banner, class: "house-banner")%>
+    <!-- Add link to House show page here -->
+    <%= link_to house.name, house_path(house) %>
+  </div>
+<% end %>
+</div>
